@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Confetti</title>
+    <link rel="stylesheet" href="./fonts/font/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/header-logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Меню
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Торты</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Мороженое</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Кексы</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Блины</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Маффины</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Брауни</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Бисквит</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Детские торты</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Печенье</a></li>
+                                    <li><a class="dropdown-item" href="#"><span><img src="./img/icon-dropdown.svg"
+                                                    alt=""></span>Напитки</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./delivery.html">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./order.html">Оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#booking">Бронь
+                                    стола</a>
+                            </li>
+                        </ul>
+                        <div class="menu-right justify-content-between d-flex">
+                            <div class="menu-contact">
+                                <a href="tel:+380954238936">
+                                    <img src="./img/phone.svg" alt="">
+                                    <span>+ (380) 95 42 38 936</span>
+                                </a>
+                            </div>
+                            <div class="menu-user">
+                                <div class="button profile">
+                                    <img src="./img/user.svg" alt="">
+                                    <a href="" class="cart">
+                                        <img src="./img/cart.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="card">
+            <div class="container">
+                <div class="card-top">
+                    <div class="card-img">
+                        <img src="./img/product-1.jpg" alt="">
+                    </div>
+                    <div class="card-sidebar">
+                        <div class="sidebar-title">Эстерхази
+                            <div class="product-rating">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                            <div class="reviews">
+                                Кол-во отзывов: <span>23</span>
+                            </div>
+                            <div class="price">
+                                <span>Цена за вес</span> <b>1 000 Г</b>
+                            </div>
+                            <div class="price">
+                                <span>Количество тортов</span> <b>4 шт.</b>
+                            </div>
+                            <div class="price">
+                                <span>Количество</span>
+                                <div class="input-range">
+                                    <span class="min button">
+                                        -
+                                    </span>
+                                    <input type="text" name="qty" id="qty" maxlength="12">
+                                    <span class="plus button">
+                                        +
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="to-pay">
+                            <span>Итого к оплате</span>
+                            <b>1 000 UA</b>
+                        </div>
+                        <div class="pay-block">
+                            <button class="pay-popup">Купить</button>
+                            <button class="cart-add"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="aboutus-tab" data-bs-toggle="tab"
+                                data-bs-target="#aboutus" type="button" role="tab" aria-controls="aboutus"
+                                aria-selected="true">О товаре</button>
+                            <button class="nav-link" id="parametru-tab" data-bs-toggle="tab" data-bs-target="#parametru"
+                                type="button" role="tab" aria-controls="parametru"
+                                aria-selected="false">Параметры</button>
+                            <button class="nav-link rew-swiper" id="feedback-tab" data-bs-toggle="tab"
+                                data-bs-target="#feedback" type="button" role="tab" aria-controls="feedback"
+                                aria-selected="false">Отзывы</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="aboutus" role="tabpanel"
+                            aria-labelledby="aboutus-tab">
+                            <h3 class="tabs-title">Описание</h3>
+                            <p>Торт Эстерхази состоит из пяти коржей, выпеченных из взбитой белковой массы с добавлением
+                                миндаля, сливочного масла и муки и соединённых между собой масляным кремом с добавлением
+                                коньяка. Сверху торт покрывают толстым слоем белой сахарной глазури, на которой жидким
+                                шоколадом наносится типичный для тортов Эстерхази сетчатый рисунок.</p>
+                        </div>
+                        <div class="tab-pane fade" id="parametru" role="tabpanel" aria-labelledby="parametru-tab">
+                            <ul>
+                                <li>125 г белков</li>
+                                <li>65 г мелкого сахара</li>
+                                <li>60 г сахарной пудры</li>
+                                <li>125 г заранее поджаренных рубленых орехов </li>
+                                <li>150 г молока</li>
+                                <li>25 г ванильного сахара</li>
+                                <li>10 г муки</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="feedback" role="tabpanel" aria-labelledby="feedback-tab">
+                            <div class="swiper-feedback">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rew-header">
+                                            <div class="avatar">
+                                                <img src="./img/person-male.png" alt="">
+                                            </div>
+                                            <div class="avatar-info">
+                                                <div class="name">Иван Петров</div>
+                                                <div class="product-rating">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                                <a href="" class="rev_social">facebook.com/mark</a>
+                                            </div>
+                                        </div>
+                                        <div class="rev_footer">
+                                            <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                Действительно натуральные продукты. Я обязательно буду заказывать
+                                                дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                            <a href="">Читать полностю</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rew-header">
+                                            <div class="avatar">
+                                                <img src="./img/person-male.png" alt="">
+                                            </div>
+                                            <div class="avatar-info">
+                                                <div class="name">Иван Петров</div>
+                                                <div class="product-rating">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                                <a href="" class="rev_social">facebook.com/mark</a>
+                                            </div>
+                                        </div>
+                                        <div class="rev_footer">
+                                            <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                Действительно натуральные продукты. Я обязательно буду заказывать
+                                                дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                            <a href="">Читать полностю</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rew-header">
+                                            <div class="avatar">
+                                                <img src="./img/person-male.png" alt="">
+                                            </div>
+                                            <div class="avatar-info">
+                                                <div class="name">Иван Петров</div>
+                                                <div class="product-rating">
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span class="active"></span>
+                                                    <span></span>
+                                                </div>
+                                                <a href="" class="rev_social">facebook.com/mark</a>
+                                            </div>
+                                        </div>
+                                        <div class="rev_footer">
+                                            <p>Заказал 5кг мяса, живу в Московской области. Как и обещал оператор,
+                                                привезли через 1,5 часа. Свежее, как будто было живое еще по дороге.
+                                                Действительно натуральные продукты. Я обязательно буду заказывать
+                                                дальше. А теперь подробнее о плюсах и минусах всего магази...</p>
+                                            <a href="">Читать полностю</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <div class="block">
+                    <h4 class="delivery-title">Бесплатная доставка по Полтаве<br>
+                        и Области от 1500 UAH!</h4>
+                    <a class="delivery-btn" href="">Оформить</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-left">
+                        <div class="phones">
+                            <div class="phone-item">
+                                <span>Бесплатный звонок</span>
+                                <a href="tel:+380954238936">+ (380) 95 42 38 936</a>
+                            </div>
+                            <div class="phone-item">
+                                <span>Для приема заказов</span>
+                                <a href="tel:+380661585321">+ (380) 66 15 85 321</a>
+                            </div>
+                        </div>
+                        <div class="work-time">
+                            График работы по будням с 9:00 до 18:00
+                        </div>
+                        <div class="work-email">
+                            <a href="mailto:info@.ua">Email: info@.ua</a>
+                            <a class="site-help" href="">Поддержка</a>
+                        </div>
+                    </div>
+                    <div class="footer-center">
+                        <div class="social">
+                            <a href="">Мы в Facebook</a>
+                            <a href="">Мы в Instagram</a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="person">
+                            <a href=""><img src="./img/person.svg" alt=""><span>Войти / Регистрация</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>©2021. Confetti</span>
+                    <a href="">Условия и соглашения</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
+
+<!--- Modal --->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="./img/person-login.svg" alt="">
+                    <div class="modal-name">Войти в личный кабинет</div>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input type="text" class="phone" name="" placeholder="Телефон">
+                        </div>
+                        <div class="inpb">
+                            <input type="text" class="password" name="" placeholder="Пароль">
+                        </div>
+                        <div class="forgot_pass">Забыли пароль?</div>
+                        <button>Войти</button>
+                    </form>
+                    <div class="modal-txt">
+                        Впервые у нас? <span data-bs-toggle="modal" data-bs-target="#register">Зарегистрироватся</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="./img/icon-subscribe.svg" alt="">
+                    <div class="modal-name">Подпишитесь на нашу расслыку и получите прокомод на 50 UAH!
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input type="text" class="mail" name="" placeholder="Email">
+                        </div>
+                        <button>Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="top-modal">
+                    <img src="./img/person-login.svg" alt="">
+                    <div class="modal-name">Регистрация</div>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input type="text" class="phone" name="" placeholder="Телефон">
+                        </div>
+                        <div class="inpb">
+                            <input type="text" class="password" name="" placeholder="Пароль">
+                        </div>
+                        <div class="inpb">
+                            <input type="text" class="password" name="" placeholder="Подтвердите пароль">
+                        </div>
+
+                        <div class="check-block">
+                            <div class="line">
+                                <input type="checkbox" id="r-mail">
+                                <label for="r-mail">Хочу получать выгодные предложения от магазина</label>
+                            </div>
+                            <div class="line">
+                                <input type="checkbox" checked id="r-pol">
+                                <label for="r-pol">Принимаю условия <a href="">Пользовательського соглашения</a>, <a
+                                        href="">Политики конфиденциальности</a></label>
+                            </div>
+                        </div>
+                        <button>Зарегистрироватся</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-big">
+        <div class="modal-content">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="booking-top">
+                    Бронирование стола
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="inpb">
+                            <input type="text center" class="name" name="" placeholder="Имя">
+                        </div>
+                        <div class="inpb">
+                            <input type="text" name="" placeholder="Телефон">
+                        </div>
+                        <div class="inpb d-flex justify-content-between">
+                            <input type="text" name="" placeholder="Время">
+                            <input type="date" neme="" placeholder="Дата: дд.мм.гг">
+                        </div>
+
+                        <button>Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
